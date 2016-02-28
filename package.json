@@ -4,6 +4,7 @@
   "description": "An example Webpack deployment for using TypeScript as a library",
   "main": "dist/index.js",
   "scripts": {
+    "prepublish": "webpack --debug; webpack -p",
     "build": "webpack -p"
   },
   "keywords": [
