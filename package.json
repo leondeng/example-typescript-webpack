@@ -13,6 +13,8 @@
   "author": "Adrian Hall <adrian@shellmonger.com>",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
     "ts-loader": "^0.8.1",
     "tslint": "^3.5.0",
     "tslint-loader": "^2.1.0",
