@@ -1,3 +1,5 @@
+import { SubClass } from './SubClass';
+
 export class TestClass {
   private _name = '';
 
@@ -11,5 +13,9 @@ export class TestClass {
 
   set name(value: string) {
     this._name = value;
+  }
+
+  createNewTestObject() {
+    return new SubClass(this);
   }
 }
