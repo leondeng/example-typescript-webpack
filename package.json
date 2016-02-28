@@ -2,10 +2,9 @@
   "name": "example-typescript-webpack",
   "version": "0.1.0",
   "description": "An example Webpack deployment for using TypeScript as a library",
-  "main": "dist/index.js",
+  "main": "dist/MyLib.min.js",
   "scripts": {
-    "prepublish": "webpack --debug; webpack -p",
-    "build": "webpack -p"
+    "prepublish": "webpack --debug; webpack -p"
   },
   "keywords": [
     "example",
