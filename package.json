@@ -4,7 +4,7 @@
   "description": "An example Webpack deployment for using TypeScript as a library",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack --debug"
+    "build": "webpack -p"
   },
   "keywords": [
     "example",
@@ -17,6 +17,7 @@
     "tslint": "^3.5.0",
     "tslint-loader": "^2.1.0",
     "typescript": "^1.8.2",
-    "webpack": "^1.12.14"
+    "webpack": "^1.12.14",
+    "yargs": "^4.2.0"
   }
 }
