@@ -6,12 +6,12 @@ var libraryName = 'MyLib',
     plugins = [],
     outputFile;
 
-//if (yargs.argv.mode === 'build') {
-//  plugins.push(new webpack.optimize.UglifyJsPlugin({ minimize: true }));
-//  outputFile = libraryName + '.min.js';
-//} else {
+if (yargs.argv.mode === 'build') {
+  plugins.push(new webpack.optimize.UglifyJsPlugin({ minimize: true }));
+  outputFile = libraryName + '.min.js';
+} else {
   outputFile = libraryName + '.js';
-//}
+}
 
 var config = {
   entry: [
