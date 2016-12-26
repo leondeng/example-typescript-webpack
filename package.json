@@ -1,25 +1,30 @@
 {
-  "name": "example-typescript-webpack",
+  "name": "fe-lib",
   "version": "0.1.0",
-  "description": "An example Webpack deployment for using TypeScript as a library",
-  "main": "dist/MyLib.min.js",
+  "description": "Front End Library in Typescript, React and WebPack",
+  "main": "dist/FeLib.min.js",
   "scripts": {
-    "prepublish": "webpack --debug; webpack -p"
+    "build": "webpack --debug; webpack -p"
   },
   "keywords": [
-    "example",
+    "react",
     "typescript"
   ],
-  "author": "Adrian Hall <adrian@shellmonger.com>",
+  "author": "Fan Deng <leondeng@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/react": "^0.14.55",
+    "@types/react-dom": "^0.14.19",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
     "chai": "^3.5.0",
-    "mocha": "^2.4.5",
-    "ts-loader": "^0.8.1",
-    "tslint": "^3.5.0",
-    "tslint-loader": "^2.1.0",
-    "typescript": "^1.8.2",
-    "webpack": "^1.12.14",
-    "yargs": "^4.2.0"
+    "mocha": "^3.2.0",
+    "awesome-typescript-loader": "^3.0.0-beta.17",
+    "source-map-loader": "^0.1.5",
+    "tslint": "^4.2.0",
+    "tslint-loader": "^3.3.0",
+    "typescript": "^2.1.4",
+    "webpack": "^1.14.0",
+    "yargs": "^6.4.0"
   }
 }
