@@ -3,12 +3,14 @@
   "compilerOptions": {
     "declaration": true,
     "jsx": "react",
-    "module": "commonjs",
+    "module": "CommonJS",
     "noImplicitAny": true,
     "preserveConstEnums": true,
-    "removeComments": false,
-    "sourceMap": true,
-    "target": "es5"
+    "removeComments": true,
+    "sourceMap": false,
+    "target": "es6",
+    "newLine": "LF",
+    "outDir": "dist"
   },
   "exclude": [
     "node_modules"

@@ -4,19 +4,24 @@
   "description": "Front End Library in Typescript, React and WebPack",
   "main": "dist/FeLib.min.js",
   "scripts": {
-    "build": "webpack --debug; webpack -p"
+    "prebuild": "rm -fr dist/*",
+    "build": "webpack",
+    "postbuild": "tsc -d --outDir dist -m commonjs --noImplicitAny true --preserveConstEnums true --removeComments true -t es6 --newLine LF"
   },
   "keywords": [
+    "library",
     "react",
     "typescript"
   ],
   "author": "Fan Deng <leondeng@gmail.com>",
   "license": "MIT",
+  "dependenciese": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
   "devDependencies": {
     "@types/react": "^0.14.55",
     "@types/react-dom": "^0.14.19",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "awesome-typescript-loader": "^3.0.0-beta.17",
