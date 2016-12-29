@@ -1,3 +1,7 @@
 "use strict";
-var Hello_1 = require("./Hello");
-exports.Hello = Hello_1.Hello;
+const Hello_1 = require("./Hello");
+const component = {
+    hello: Hello_1.Hello
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = component;

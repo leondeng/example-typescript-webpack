@@ -8,11 +8,12 @@
     "preserveConstEnums": true,
     "removeComments": true,
     "sourceMap": false,
-    "target": "es6",
+    "target": "es5",
     "newLine": "LF",
     "outDir": "dist"
   },
   "exclude": [
+    "dist",
     "node_modules"
   ]
 }

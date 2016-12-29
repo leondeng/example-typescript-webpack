@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "description": "Front End Library in Typescript, React and WebPack",
   "main": "dist/FeLib.min.js",
+  "typings": "dist/FeLib.d.ts",
   "scripts": {
     "prebuild": "rm -fr dist/*",
-    "build": "webpack",
+    "build": "webpack -p",
     "postbuild": "tsc -d --outDir dist -m commonjs --noImplicitAny true --preserveConstEnums true --removeComments true -t es6 --newLine LF"
   },
   "keywords": [
