@@ -1,6 +1,6 @@
 "use strict";
-var Component = require("./components/__all");
+var component = require("./components/__all");
 exports.Ui = {
-    Component: Component,
+    Component: component,
 };
 //# sourceMappingURL=__all.js.map

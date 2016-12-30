@@ -75,9 +75,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var Component = __webpack_require__(3);
+	var component = __webpack_require__(3);
 	exports.Ui = {
-	    Component: Component,
+	    Component: component,
 	};
 
 
