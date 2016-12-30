@@ -21,17 +21,31 @@ var config = {
   output: {
     path: path.join(__dirname, '/dist'),
     filename: outputFile,
+    // library: true,
+    // libraryTarget: 'commonjs2'
     library: libraryName,
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
+  // target: 'node',
   module: {
     preLoaders: [
-      { test: /\.tsx?$/, loader: 'tslint', exclude: /node_modules/ }/*,
-      { test: /\.js$/, loader: "source-map-loader" }*/
+      {
+        test: /\.tsx?$/,
+        loader: 'tslint',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.js$/,
+        loader: "source-map-loader"
+      }
     ],
     loaders: [
-      { test: /\.tsx?$/, loader: 'awesome-typescript-loader', exclude: /node_modules/ }
+      {
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader',
+        exclude: /node_modules/
+      }
     ]
   },
   resolve: {

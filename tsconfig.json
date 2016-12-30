@@ -7,7 +7,7 @@
     "noImplicitAny": true,
     "preserveConstEnums": true,
     "removeComments": true,
-    "sourceMap": false,
+    "sourceMap": true,
     "target": "es5",
     "newLine": "LF",
     "outDir": "dist"
@@ -15,5 +15,8 @@
   "exclude": [
     "dist",
     "node_modules"
-  ]
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "declaration": true
+  }
 }

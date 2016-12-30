@@ -5,9 +5,9 @@
   "main": "dist/FeLib.min.js",
   "typings": "dist/FeLib.d.ts",
   "scripts": {
-    "prebuild": "rm -fr dist/*",
+    "prebuild": "rimraf dist",
     "build": "webpack -p",
-    "postbuild": "tsc -d --outDir dist -m commonjs --noImplicitAny true --preserveConstEnums true --removeComments true -t es6 --newLine LF"
+    "postbuild": "dts-generator --name FeLib --project ./ -out dist/FeLib.d.ts"
   },
   "keywords": [
     "library",
@@ -23,9 +23,9 @@
   "devDependencies": {
     "@types/react": "^0.14.55",
     "@types/react-dom": "^0.14.19",
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0",
     "awesome-typescript-loader": "^3.0.0-beta.17",
+    "dts-generator": "^2.0.0",
+    "rimraf": "^2.5.4",
     "source-map-loader": "^0.1.5",
     "tslint": "^4.2.0",
     "tslint-loader": "^3.3.0",
