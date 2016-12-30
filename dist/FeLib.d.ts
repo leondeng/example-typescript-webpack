@@ -1,15 +1,14 @@
 declare module 'FeLib' {
-	 const component: {
-	    hello: any;
+	export const Component: {
+	    Hello: any;
 	};
-	export default component;
 
 }
 declare module 'FeLib' {
-	import * as Component from 'components/__all'; const ui: {
-	    component: typeof Component;
+	import * as Component from 'components/__all';
+	export const Ui: {
+	    Component: typeof Component;
 	};
-	export default ui;
 
 }
 declare module 'FeLib' {

@@ -1,7 +1,5 @@
 import { Hello } from './Hello';
 
-const component = {
-  hello: Hello
+export const Component = {
+  Hello: Hello
 };
-
-export default component

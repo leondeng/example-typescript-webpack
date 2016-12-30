@@ -1,7 +1,5 @@
 import * as Component from './components/__all';
 
-const ui = {
-  component: Component,
+export const Ui = {
+  Component: Component,
 }
-
-export default ui

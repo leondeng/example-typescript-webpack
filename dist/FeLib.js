@@ -76,11 +76,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	"use strict";
 	var Component = __webpack_require__(3);
-	var ui = {
-	    component: Component,
+	exports.Ui = {
+	    Component: Component,
 	};
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = ui;
 
 
 /***/ },
@@ -89,11 +87,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	"use strict";
 	var Hello_1 = __webpack_require__(4);
-	var component = {
-	    hello: Hello_1.Hello
+	exports.Component = {
+	    Hello: Hello_1.Hello
 	};
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = component;
 
 
 /***/ },
