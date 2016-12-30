@@ -5,9 +5,9 @@
   "main": "dist/FeLib.min.js",
   "typings": "dist/FeLib.d.ts",
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "webpack -p",
-    "postbuild": "dts-generator --name FeLib --project ./ -out dist/FeLib.d.ts"
+    "prebuild": "rimraf dist; tsc -d --outDir dist -m commonjs --noImplicitAny true --preserveConstEnums true --removeComments true -t es5 --newLine LF",
+    "build": "webpack; webpack -p",
+    "watch": "webpack --progress --color --watch --display-error-details"
   },
   "keywords": [
     "library",
@@ -24,7 +24,6 @@
     "@types/react": "^0.14.55",
     "@types/react-dom": "^0.14.19",
     "awesome-typescript-loader": "^3.0.0-beta.17",
-    "dts-generator": "^2.0.0",
     "rimraf": "^2.5.4",
     "source-map-loader": "^0.1.5",
     "tslint": "^4.2.0",
